@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YallaJO — Discover Jordan Your Way</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <main>
+
+
+        <!-- Main -->
+
+        <section class="main">
+
+            <div class="main-images">
+
+                <img src="assets/images/karak.webp" alt="Karak" class="active">
+                <img src="assets/images/aqaba.webp" alt="Aqaba">
+                <img src="assets/images/amman.webp" alt="Amman">
+                <img src="assets/images/petra.webp" alt="Petra">
+                <img src="assets/images/ajloun_castle.webp" alt="Ajloun">
+                <img src="assets/images/ajloun_forest_reserve.webp" alt="Ajloun Forest Reserve">
+                <img src="assets/images/wadi_numeira.webp" alt="Wadi Numeira">
+                <img src="assets/images/wadi_mujib2.webp" alt="Wadi Mujib">
+                <img src="assets/images/madaba.webp" alt="Madaba">
+                <img src="assets/images/jerash.webp" alt="Jerash">
+                <img src="assets/images/mount_nebo.jpg" alt="Mount Nebo">
+                <img src="assets/images/hammamat_maien.webp" alt="Hammamat Ma'in">
+                <img src="assets/images/wadi_rum.webp" alt="Wadi Rum">
+                <img src="assets/images/pink_lake.jpg" alt="Pink Lake">
+
+            </div>
+
+
+            <div class="main-overlay"></div>
+
+
+            <header class="navbar">
+
+                <a href="#" class="logo">
+                    <img src="assets/images/yallajo_logo.webp" alt="YallaJO">
+                </a>
+
+
+                <nav class="links">
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#journey">
+                        My Journey
+                    </a>
+
+                    <a href="#passport">
+                        Passport
+                    </a>
+
+                </nav>
+
+
+                <div class="language">
+
+                    <select aria-label="Language">
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="ar">
+                            العربية
+                        </option>
+
+                        <option value="fr">
+                            Français
+                        </option>
+
+                        <option value="de">
+                            Deutsch
+                        </option>
+
+                        <option value="it">
+                            Italiano
+                        </option>
+
+                        <option value="es">
+                            Español
+                        </option>
+
+                        <option value="ru">
+                            Русский
+                        </option>
+
+                        <option value="zh">
+                            中文
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <a href="#personalize" class="button">
+                    Start Exploring
+                </a>
+
+     <div class="account-area" id="accountArea">
+
+    <button
+        type="button"
+        class="account-icon"
+        id="accountButton"
+        aria-label="Account"
+        aria-expanded="false"
+    >
+
+        <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+            <circle
+                cx="12"
+                cy="8"
+                r="3.5"
+            ></circle>
+
+            <path
+                d="M5.5 20c.8-3.6 3.1-5.5 6.5-5.5s5.7 1.9 6.5 5.5"
+            ></path>
+
+        </svg>
+
+    </button>
+
+
+    <div
+        class="account-dropdown"
+        id="accountDropdown"
+        aria-hidden="true"
+    >
+
+        <!-- Guest -->
+
+        <div
+            class="account-guest"
+            id="accountGuest"
+        >
+
+            <p class="account-dropdown-label">
+                WELCOME TO YALLAJO
+            </p>
+
+            <p class="account-dropdown-text">
+                Save your journey, places and passport.
+            </p>
+
+            <button
+                type="button"
+                class="account-login"
+                id="accountLogin"
+            >
+                Log in
+            </button>
+
+            <button
+                type="button"
+                class="account-signup"
+                id="accountSignup"
+            >
+                Create account
+            </button>
+
+        </div>
+
+
+        <!-- Logged in -->
+
+        <div
+            class="account-user"
+            id="accountUser"
+        >
+
+            <div class="account-user-header">
+
+                <div class="account-avatar">
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="3.5"
+                        ></circle>
+
+                        <path
+                            d="M5.5 20c.8-3.6 3.1-5.5 6.5-5.5s5.7 1.9 6.5 5.5"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <p class="account-user-title">
+                        YOUR YALLAJO
+                    </p>
+
+                    <p
+                        class="account-user-email"
+                        id="accountUserEmail"
+                    >
+                        -
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="account-menu">
+
+                <button
+                    type="button"
+                    class="account-menu-item"
+                    data-account-action="profile"
+                >
+                    <span>Profile</span>
+                    <span>→</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="account-menu-item"
+                    data-account-action="journey"
+                >
+                    <span>My Journey</span>
+                    <span>→</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="account-menu-item"
+                    data-account-action="passport"
+                >
+                    <span>Passport</span>
+                    <span>→</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="account-menu-item"
+                    data-account-action="settings"
+                >
+                    <span>Settings</span>
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="account-logout"
+                id="accountLogout"
+            >
+                Log out
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="auth-modal" id="authModal">
+
+    <div class="auth-card">
+
+        <button
+            type="button"
+            class="auth-close"
+            id="authClose"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <p class="small-title">WELCOME TO YALLAJO</p>
+
+        <h2 id="authTitle">
+            Continue your journey.
+        </h2>
+
+        <p class="auth-intro" id="authIntro">
+            Create an account to save your journey, places and passport.
+        </p>
+
+        <form id="authForm">
+
+            <input
+                type="email"
+                id="authEmail"
+                placeholder="Email address"
+                required
+            >
+
+            <input
+                type="password"
+                id="authPassword"
+                placeholder="Password"
+                minlength="6"
+                required
+            >
+
+            <button type="submit" class="auth-submit" id="authSubmit">
+                Log in
+            </button>
+
+        </form>
+
+        <p class="auth-message" id="authMessage"></p>
+
+        <button
+            type="button"
+            class="auth-switch"
+            id="authSwitch"
+        >
+            Don't have an account? Sign up
+        </button>
+
+    </div>
+
+</div>
+            </header>
+
+
+            <div class="main-text">
+
+                <p class="small-title">
+                    DISCOVER JORDAN YOUR WAY
+                </p>
+
+
+                <h1>
+                    The road is part
+                    <br>
+                    of the journey.
+                </h1>
+
+
+              
+
+            </div>
+
+        </section>
+
+
+
+        <!-- About -->
+
+       <!-- نبذة الموقع -->
+
+<section class="about" id="about">
+
+    <div class="about-mosaic"></div>
+
+    <div class="about-top">
+        <p class="small-title">MORE THAN A DESTINATION</p>
+
+        <div class="about-number">
+            <span>YALLAJO</span>
+            <span>01</span>
+        </div>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-title">
+            <span>Discover Jordan,</span>
+            <strong>your way.</strong>
+        </div>
+
+        <div class="about-copy">
+            <p>
+                A journey shaped around what you love,
+                the places that call you, and the moments
+                worth stopping for.
+            </p>
+
+            <div class="about-tags">
+                <span>PLACES</span>
+                <span>STORIES</span>
+                <span>EXPERIENCES</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about-route">
+        <span class="route-dot"></span>
+        <span class="route-line"></span>
+        <span class="route-text">THE JOURNEY STARTS HERE</span>
+    </div>
+
+</section>
+</section>
+
+        </section>
+
+
+
+        <!-- Personalization -->
+
+        <section class="personalize" id="personalize">
+
+            <div class="personalize-top">
+
+                <div>
+
+                    <p class="small-title">
+                        MAKE IT YOUR JOURNEY
+                    </p>
+
+
+                    <h2>
+                        Tell us what
+                        <br>
+                        you enjoy.
+                    </h2>
+
+                </div>
+
+
+                <p class="personalize-description">
+                    A few simple choices help us shape a journey
+                    that feels right for you.
+                </p>
+
+            </div>
+
+
+
+            <div class="steps">
+
+                <button class="step active" data-step="1">
+
+                    <span class="step-icon">
+                        ✦
+                    </span>
+
+                    <span>
+                        Interests
+                    </span>
+
+                </button>
+
+
+                <button class="step" data-step="2">
+
+                    <span class="step-icon">
+                        ◌
+                    </span>
+
+                    <span>
+                        Travel Style
+                    </span>
+
+                </button>
+
+
+                <button class="step" data-step="3">
+
+                    <span class="step-icon">
+                        ◷
+                    </span>
+
+                    <span>
+                        Time & Budget
+                    </span>
+
+                </button>
+
+
+                <button class="step" data-step="4">
+
+                    <span class="step-icon">
+                        ⌖
+                    </span>
+
+                    <span>
+                        Accessibility
+                    </span>
+
+                </button>
+
+            </div>
+
+
+
+            <div class="step-content">
+
+
+                <!-- Step 1 -->
+
+                <div class="step-panel active" data-panel="1">
+
+                    <p class="step-number">
+                        Interests
+                    </p>
+
+
+                    <h3>
+                        What would you love to discover?
+                    </h3>
+
+
+                    <p class="step-note">
+                        Choose as many as you like.
+                    </p>
+
+
+                    <div class="options">
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ⌂
+                            </span>
+
+                            <span>
+                                History
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◒
+                            </span>
+
+                            <span>
+                                Nature
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◇
+                            </span>
+
+                            <span>
+                                Culture
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ○
+                            </span>
+
+                            <span>
+                                Food
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ⌁
+                            </span>
+
+                            <span>
+                                Adventure
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ✧
+                            </span>
+
+                            <span>
+                                Local Experiences
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Step 2 -->
+
+                <div class="step-panel" data-panel="2">
+
+                    <p class="step-number">
+                        Travel Style
+                    </p>
+
+
+                    <h3>
+                        How do you like to travel?
+                    </h3>
+
+
+                    <p class="step-note">
+                        Choose the way that feels most like you.
+                    </p>
+
+
+                    <div class="options">
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◯
+                            </span>
+
+                            <span>
+                                Solo
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ♡
+                            </span>
+
+                            <span>
+                                Couple
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ⌂
+                            </span>
+
+                            <span>
+                                Family
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◌
+                            </span>
+
+                            <span>
+                                Friends
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Step 3 -->
+
+                <div class="step-panel" data-panel="3">
+
+                    <p class="step-number">
+                        Time & Budget
+                    </p>
+
+
+                    <h3>
+                        How much time do you have?
+                    </h3>
+
+
+                    <p class="step-note">
+                        We will shape the journey around it.
+                    </p>
+
+
+                    <div class="options">
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◷
+                            </span>
+
+                            <span>
+                                Few Hours
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◷
+                            </span>
+
+                            <span>
+                                Half Day
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◷
+                            </span>
+
+                            <span>
+                                Full Day
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◷
+                            </span>
+
+                            <span>
+                                More Than a Day
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Step 4 -->
+
+                <div class="step-panel" data-panel="4">
+
+                    <p class="step-number">
+                        Accessibility
+                    </p>
+
+
+                    <h3>
+                        Anything we should keep in mind?
+                    </h3>
+
+
+                    <p class="step-note">
+                        This helps us make your journey more comfortable.
+                    </p>
+
+
+                    <div class="options">
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ○
+                            </span>
+
+                            <span>
+                                Wheelchair Friendly
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ⌁
+                            </span>
+
+                            <span>
+                                Less Walking
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                ◉
+                            </span>
+
+                            <span>
+                                Audio Support
+                            </span>
+
+                        </button>
+
+
+                        <button class="option">
+
+                            <span class="option-icon">
+                                —
+                            </span>
+
+                            <span>
+                                No Special Needs
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="personalize-bottom">
+
+    <button type="button" class="back-button" id="backButton">
+        ← Back
+    </button>
+
+    <button type="button" class="next-button" id="nextButton">
+        Build My Path
+    </button>
+
+</div>
+        </section>
+
+
+
+        <!-- Recommendations / Choose Your Path -->
+
+        <section class="recommendations" id="recommendations">
+
+            <div class="recommendations-header">
+                <div>
+                    <p class="small-title">YOUR PATH</p>
+                    <h2>Your Jordan,<br>your way.</h2>
+                </div>
+
+                <div class="recommendation-summary">
+                    <p id="recommendationIntro">Based on your choices, we shaped a route around what you enjoy.</p>
+                    <div class="recommendation-meta" id="recommendationMeta">
+                        <span>Personalized</span>
+                        <span>•</span>
+                        <strong id="recommendationMatch">Ready</strong>
+                    </div>
+                </div>
+            </div>
+
+           <div class="recommendation-grid" id="recommendationGrid"></div>
+
+<div class="journey-start-selector">
+
+    <div class="journey-start-copy">
+        <p class="small-title">START YOUR JOURNEY</p>
+
+        <h3>Where would you like to begin?</h3>
+
+        <p>
+            Choose your starting point and we'll shape the route from there.
+        </p>
+    </div>
+
+    <div class="journey-start-options" id="journeyStartOptions">
+        <!-- JavaScript fills these -->
+    </div>
+
+    <p class="journey-start-message" id="journeyStartMessage"></p>
+
+</div>
+
+<div class="recommendation-actions">
+    <button
+        class="next-button"
+        id="buildJourneyButton"
+        disabled
+    >
+        Build My Journey
+    </button>
+</div>
+        </section>
+
+
+        <!-- Destination -->
+
+        <section class="destination" id="destination">
+
+            <div class="destination-content">
+
+                <p class="small-title">
+                    YOUR JOURNEY STARTS HERE
+                </p>
+
+
+                <h2>
+                    Where are
+                    <br>
+                    you headed?
+                </h2>
+
+
+                <p class="destination-text">
+                    Explore a destination directly, or continue with the personalized path we built for you.
+                </p>
+
+
+                <p class="destination-helper" id="destinationHelper">You can also choose a destination directly.</p>
+
+
+                <div class="destination-search">
+
+                    <input
+                        type="text"
+                        id="destinationInput"
+                        placeholder="Search a place in Jordan..."
+                    >
+
+
+                    <button id="destinationButton">
+                        Explore
+                    </button>
+
+                </div>
+
+
+                <div class="destination-places">
+
+                    <span>
+                        Amman
+                    </span>
+
+                    <span>
+                        Madaba
+                    </span>
+
+                    <span>
+                        Karak
+                    </span>
+
+                    <span>
+                        Ajloun
+                    </span>
+
+                    <span>
+                        Aqaba
+                    </span>
+
+                    <span>
+                        Irbid
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Route Map -->
+
+        <section class="route-map" id="routeMap">
+
+            <div class="route-header">
+
+                <div>
+
+                    <p class="small-title">
+                        YOUR JOURNEY
+                    </p>
+
+
+                    <h2 id="routeTitle">
+                        Your personalized
+                        <br>
+                        Jordan route.
+                    </h2>
+
+                </div>
+
+
+                <div class="route-summary">
+
+                    <p>
+                        A route shaped around your choices,
+                        with meaningful stops along the way.
+                    </p>
+
+
+                    <div class="route-meta">
+
+                        <span>
+                            Jordan
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                        <strong id="routeDestinationMeta">
+                            Your destination
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="route-layout">
+
+                <div class="route-visual">
+
+                    <div class="route-line">
+
+                        <span class="route-point start-point"></span>
+
+                        <span class="route-point stop-point stop-one"></span>
+
+                        <span class="route-point stop-point stop-two"></span>
+
+                        <span class="route-point stop-point stop-three"></span>
+
+                        <span class="route-point destination-point"></span>
+
+                    </div>
+
+
+                    <div class="route-label start-label">
+
+                        <span>
+                            START
+                        </span>
+
+                        <strong id="routeStartLabel">
+                            Your starting point
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-label stop-label-one">
+
+                        <span>
+                            STOP 01
+                        </span>
+
+                        <strong class="route-label-name" data-route-label="0">
+                            Stop 01
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-label stop-label-two">
+
+                        <span>
+                            STOP 02
+                        </span>
+
+                        <strong class="route-label-name" data-route-label="1">
+                            Stop 02
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-label stop-label-three">
+
+                        <span>
+                            STOP 03
+                        </span>
+
+                        <strong class="route-label-name" data-route-label="2">
+                            Stop 03
+                        </strong>
+
+                    </div>
+
+
+                    <div class="route-label destination-label">
+
+                        <span>
+                            DESTINATION
+                        </span>
+
+                        <strong id="routeDestinationLabel">
+                            Destination
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="route-stops" id="routeStops"></div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Place Overview -->
+
+        <section class="place-overview" id="placeOverview">
+
+            <div class="place-image">
+
+                <img id="placeImage"
+                    src="assets/images/wadi_numeira.webp"
+                    alt="Wadi Numeira"
+                >
+
+            </div>
+
+
+            <div class="place-content">
+
+                <p class="small-title" id="placeCategory">
+                    NATURE · ADVENTURE
+                </p>
+
+
+                <h2 id="placeTitle">
+                    Wadi
+                    <br>
+                    Numeira.
+                </h2>
+
+
+                <p class="place-description" id="placeDescription">
+                    A natural stop where the landscape becomes part of the journey.
+                </p>
+
+
+                <div class="place-info" id="placeInfo">
+
+                    <span>
+                        Karak
+                    </span>
+
+                    <span>
+                        Hiking
+                    </span>
+
+                    <span>
+                        Outdoor
+                    </span>
+
+                </div>
+
+
+                <button class="story-button" id="storyButton">
+                    Discover the Story
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Story -->
+
+        <section class="story-section" id="storySection">
+
+            <div class="story-header">
+
+                <div>
+
+                    <p class="small-title">
+                        THE STORY BEHIND THE PLACE
+                    </p>
+
+
+                    <h2 id="storyTitle">
+                        More than
+                        <br>
+                        a stop.
+                    </h2>
+
+                </div>
+
+
+                <p class="story-intro">
+                    <span id="storyIntroText">Every place has something worth noticing. Discover why this stop became part of your journey.</span>
+                </p>
+
+            </div>
+
+
+
+            <div class="story-tabs">
+
+                <button class="story-tab">
+                    Overview
+                </button>
+
+
+                <button class="story-tab active">
+                    Story
+                </button>
+
+
+                <button class="story-tab">
+                    Practical Info
+                </button>
+
+
+                <button class="story-tab">
+                    Accessibility
+                </button>
+
+            </div>
+
+
+
+            <div class="story-layout">
+
+                <div class="story-media">
+
+                    <div class="media-placeholder">
+
+                        <span>
+                            MEDIA
+                        </span>
+
+                        <strong>
+                            Wadi Numeira
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="story-content">
+
+                    <div class="story-text" id="storyText">
+
+                        <p class="story-label">
+                            THE STORY
+                        </p>
+
+
+                        <h3>
+                            Where water
+                            <br>
+                            shaped the land.
+                        </h3>
+
+
+                        <p>
+                            Wadi Numeira is a natural landscape shaped
+                            by water, time and the movement of the land.
+                            Its dramatic rock formations and narrow
+                            passages create a place where the journey
+                            becomes part of the experience.
+                        </p>
+
+
+                        <p>
+                            The wadi offers a different side of Karak —
+                            one that is quieter, more rugged and connected
+                            to the natural landscape surrounding the
+                            destination.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="story-audio">
+
+                        <div class="audio-icon">
+                            ▶
+                        </div>
+
+
+                        <div class="audio-info">
+
+                            <span>
+                                LISTEN TO THE STORY
+                            </span>
+
+                            <strong>
+                                Audio story coming soon
+                            </strong>
+
+                        </div>
+
+
+                        <span class="audio-time">
+                            0:00
+                        </span>
+
+                    </div>
+
+
+
+                    <button class="story-next" id="storyNextButton">
+                        Continue to Practical Info
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Practical Information -->
+
+        <section class="practical-info" id="practicalInfo">
+
+            <div class="practical-header">
+
+                <div>
+
+                    <p class="small-title">
+                        BEFORE YOU GO
+                    </p>
+
+                    <h2>
+                        Know the
+                        <br>
+                        place.
+                    </h2>
+
+                </div>
+
+                <p class="practical-intro">
+                    A few practical details to help you
+                    understand the stop and prepare for
+                    the experience ahead.
+                </p>
+
+            </div>
+
+
+            <div class="practical-layout">
+
+                <div class="practical-main">
+
+                    <div class="info-row">
+
+                        <div class="info-icon">
+                            ◷
+                        </div>
+
+                        <div>
+
+                            <span class="info-label">
+                                TIME
+                            </span>
+
+                            <h3>
+                                Plan enough time
+                            </h3>
+
+                            <p>
+                                Give yourself enough time to explore
+                                Wadi Numeira without rushing through
+                                the experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <div class="info-icon">
+                            ⌁
+                        </div>
+
+                        <div>
+
+                            <span class="info-label">
+                                TERRAIN
+                            </span>
+
+                            <h3>
+                                Natural landscape
+                            </h3>
+
+                            <p>
+                                The experience takes place in a natural
+                                outdoor environment, so comfortable
+                                clothing and suitable footwear are
+                                recommended.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <div class="info-icon">
+                            ○
+                        </div>
+
+                        <div>
+
+                            <span class="info-label">
+                                EXPERIENCE
+                            </span>
+
+                            <h3>
+                                Outdoor adventure
+                            </h3>
+
+                            <p>
+                                Expect uneven natural terrain and an
+                                experience shaped by the landscape
+                                rather than a fixed indoor route.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <div class="info-icon">
+                            !
+                        </div>
+
+                        <div>
+
+                            <span class="info-label">
+                                PREPARE
+                            </span>
+
+                            <h3>
+                                Come prepared
+                            </h3>
+
+                            <p>
+                                Check current local conditions before
+                                visiting and follow any safety guidance
+                                available at the site.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="practical-side">
+
+                    <div class="quick-info">
+
+                        <span class="quick-title">
+                            QUICK INFO
+                        </span>
+
+
+                        <div class="quick-item">
+
+                            <span>
+                                01
+                            </span>
+
+                            <p>
+                                Location — Karak, Jordan
+                            </p>
+
+                        </div>
+
+
+                        <div class="quick-item">
+
+                            <span>
+                                02
+                            </span>
+
+                            <p>
+                                Type — Nature & Adventure
+                            </p>
+
+                        </div>
+
+
+                        <div class="quick-item">
+
+                            <span>
+                                03
+                            </span>
+
+                            <p>
+                                Setting — Outdoor
+                            </p>
+
+                        </div>
+
+
+                        <div class="quick-item">
+
+                            <span>
+                                04
+                            </span>
+
+                            <p>
+                                Route stop — Wadi Numeira
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="practical-media">
+
+                        <span>
+                            YOUR NEXT STOP
+                        </span>
+
+                        <strong>
+                            Keep exploring Karak.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="practical-bottom">
+
+                <button
+                    class="practical-next"
+                    id="practicalNextButton"
+                >
+                    Continue to Challenge
+                </button>
+
+            </div>
+
+        </section>
+        <!-- Challenge -->
+
+<section class="challenge-section" id="challengeSection">
+
+    <div class="challenge-header">
+
+        <div>
+            <p class="small-title">YOUR CHALLENGE</p>
+
+            <h2>
+                Look closer.
+                <br>
+                Discover more.
+            </h2>
+        </div>
+
+        <p class="challenge-intro">
+            Take a moment to notice something you might
+            otherwise pass by. Your journey is not only
+            about where you go, but what you notice along
+            the way.
+        </p>
+
+    </div>
+
+
+    <div class="challenge-card">
+
+        <div class="challenge-number">
+            CHALLENGE 01
+        </div>
+
+        <div class="challenge-content">
+
+            <p class="challenge-label">
+                WADI NUMEIRA · OBSERVE
+            </p>
+
+            <h3>
+                Find something
+                <br>
+                shaped by water.
+            </h3>
+
+            <p>
+                Look around the landscape and find one rock,
+                formation or natural detail that shows how
+                water and time have shaped this place.
+            </p>
+
+            <div class="challenge-options">
+
+                <button class="challenge-option">
+                    <span>01</span>
+                    <strong>I found a rock formation</strong>
+                </button>
+
+                <button class="challenge-option">
+                    <span>02</span>
+                    <strong>I noticed a water-shaped detail</strong>
+                </button>
+
+                <button class="challenge-option">
+                    <span>03</span>
+                    <strong>I discovered something unexpected</strong>
+                </button>
+
+            </div>
+
+            <button class="challenge-complete" id="challengeComplete">
+                Complete Challenge
+            </button>
+
+            <p class="challenge-message" id="challengeMessage">
+                Challenge completed. Your journey continues.
+            </p>
+
+            <button class="challenge-next" id="challengeNextButton">
+                Continue to Check-in
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="challenge-bottom">
+
+        <span>
+            01 / 01
+        </span>
+
+        <span>
+            +10 JOURNEY POINTS
+        </span>
+
+    </div>
+
+       </section>
+
+
+               <!-- Check-in -->
+
+        <section class="checkin-section" id="checkinSection">
+
+            <div class="checkin-header">
+
+                <div>
+                    <p class="small-title">YOU MADE IT</p>
+
+                    <h2>
+                        You are<br>
+                        here.
+                    </h2>
+                </div>
+
+                <p class="checkin-intro">
+                    Take a moment to mark this stop.
+                    Your journey is made of places,
+                    stories and moments worth remembering.
+                </p>
+
+            </div>
+
+
+            <div class="checkin-card">
+
+                <div class="checkin-image">
+                    <img
+                        src="assets/images/wadi_numeira.webp"
+                        alt="Wadi Numeira"
+                    >
+                </div>
+
+                <div class="checkin-content">
+
+                    <p class="checkin-label">
+                        CURRENT STOP
+                    </p>
+
+                    <h3>
+                        Wadi Numeira
+                    </h3>
+
+                    <p>
+                        You have reached one of the stops
+                        on your journey through Karak.
+                        Check in and make this moment part
+                        of your YallaJO story.
+                    </p>
+
+                    <div class="checkin-location">
+                        <span>KARAK</span>
+                        <span>STOP 01</span>
+                    </div>
+
+                    <button
+                        class="checkin-button"
+                        id="checkinButton"
+                    >
+                        Check in here
+                    </button>
+
+                    <p
+                        class="checkin-message"
+                        id="checkinMessage"
+                    >
+                        Checked in. This place is now part of your journey.
+                    </p>
+
+                    <button class="checkin-next" id="checkinNextButton">
+                        Continue to My Journey
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="checkin-bottom">
+
+                <span>WADI NUMEIRA</span>
+
+                <span>
+                    JOURNEY STOP 01
+                </span>
+
+            </div>
+
+        </section>
+        
+    
+
+        <!-- Interactive Journey Map -->
+
+        <section class="journey-map" id="journeyMap">
+            <div class="journey-map-header">
+                <div>
+                    <p class="small-title">YOUR EXPLORED JORDAN</p>
+                    <h2>See your journey<br>come to life.</h2>
+                </div>
+                <div class="journey-map-summary">
+                    <p id="mapSummary">Your recommended places will appear here as you explore them.</p>
+                    <strong id="mapDistance">0 km explored</strong>
+                </div>
+            </div>
+
+            <div class="journey-map-board" id="journeyMapBoard">
+                <div class="map-grid"></div>
+                <div class="map-route-line" id="mapRouteLine"></div>
+                <div class="map-markers" id="mapMarkers"></div>
+            </div>
+        </section>
+
+
+        <!-- My Journey -->
+
+        <section class="journey-section" id="journey">
+
+            <div class="journey-header">
+                <div>
+                    <p class="small-title">MY JOURNEY</p>
+                    <h2>The road<br>so far.</h2>
+                </div>
+
+                <p class="journey-intro">
+                    See what you have discovered, what you have collected
+                    and where the road can take you next.
+                </p>
+            </div>
+
+            <div class="journey-overview">
+
+                <div class="journey-stat">
+                    <span>STOPS VISITED</span>
+                    <strong id="journeyStops">0 / 4</strong>
+                </div>
+
+                <div class="journey-stat">
+                    <span>JOURNEY POINTS</span>
+                    <strong id="journeyPoints">0</strong>
+                </div>
+
+                <div class="journey-stat">
+                    <span>CURRENT AREA</span>
+                    <strong id="journeyArea">—</strong>
+                </div>
+
+            </div>
+
+            <div class="journey-route" id="journeyRoute"></div>
+
+            <div class="journey-bottom">
+                <p>YOUR JOURNEY IS ONLY GETTING STARTED.</p>
+                <button class="journey-next" id="journeyNextButton">
+                    Open My Passport
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Passport -->
+
+        <section class="passport-section" id="passport">
+
+            <div class="passport-header">
+                <div>
+                    <p class="small-title">YOUR JORDAN PASSPORT</p>
+                    <h2>Your journey,<br>collected.</h2>
+                </div>
+
+                <p class="passport-intro">
+                    Keep the places you discover, the moments you collect
+                    and the journey you build through Jordan in one place.
+                </p>
+            </div>
+
+            <div class="passport-card">
+
+                <div class="passport-top">
+                    <div>
+                        <span class="passport-label">YALLAJO PASSPORT</span>
+                        <h3>Jordan Explorer</h3>
+                    </div>
+
+                    <div class="passport-points">
+                        <span>JOURNEY POINTS</span>
+                        <strong id="passportPoints">0</strong>
+                    </div>
+                </div>
+
+                <div class="passport-progress">
+                    <div class="passport-progress-top">
+                        <span>STAMPS COLLECTED</span>
+                        <strong id="passportCount">0 / 4</strong>
+                    </div>
+
+                    <div class="passport-progress-bar">
+                        <span id="passportProgress"></span>
+                    </div>
+                </div>
+
+                <div class="passport-stamps">
+
+                    <article class="passport-stamp locked">
+                        <div class="stamp-circle">
+                            <span>01</span>
+                        </div>
+                        <p id="passportStamp1">Wadi Numeira</p>
+                        <span>CHECK-IN</span>
+                    </article>
+
+                    <article class="passport-stamp locked">
+                        <div class="stamp-circle">
+                            <span>02</span>
+                        </div>
+                        <p id="passportStamp2">Hassan Cultural Center</p>
+                        <span>DISCOVER</span>
+                    </article>
+
+                    <article class="passport-stamp locked">
+                        <div class="stamp-circle">
+                            <span>03</span>
+                        </div>
+                        <p id="passportStamp3">A Taste of Karak</p>
+                        <span>EXPERIENCE</span>
+                    </article>
+
+                    <article class="passport-stamp locked">
+                        <div class="stamp-circle">
+                            <span>04</span>
+                        </div>
+                        <p id="passportStamp4">Karak Castle</p>
+                        <span>DESTINATION</span>
+                    </article>
+
+                </div>
+
+                <div class="passport-footer">
+                    <span>KEEP EXPLORING</span>
+                    <span>MORE STAMPS AWAIT</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Transition -->
+
+    <div
+        class="transition-layer"
+        id="transitionLayer"
+    ></div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+
+  import {
+    getAnalytics
+  } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+
+import {
+    getAuth,
+    signInAnonymously,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+import {
+  getFirestore
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDvs82UnGGGSN82qIf_w7BuNal9KYMWu_8",
+    authDomain: "yallajo-78a71.firebaseapp.com",
+    projectId: "yallajo-78a71",
+    storageBucket: "yallajo-78a71.firebasestorage.app",
+    messagingSenderId: "304869141350",
+    appId: "1:304869141350:web:a9a7c0e36d958fd802b6a7",
+    measurementId: "G-03FW9KY8DQ"
+  };
+
+
+  const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+
+  const auth = getAuth(app);
+
+  const db = getFirestore(app);
+
+
+  // Make Firebase available to script.js
+ window.yallaFirebase = {
+    app,
+    analytics,
+    auth,
+    db,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged,
+    signInAnonymously
+};
+
+  // Anonymous user
+signInAnonymously(auth)
+  .then(async (userCredential) => {
+
+    console.log(
+      "YallaJO Firebase user connected:",
+      userCredential.user.uid
+    );
+
+  })
+  .catch((error) => {
+
+    console.error(
+      "Firebase error:",
+      error
+    );
+
+  });
+    
+
+</script>
+
+<script type="module" src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const show = id => { const el=document.getElementById(id); if(!el) return; el.classList.add("active"); el.style.display="block"; el.scrollIntoView({behavior:"smooth",block:"start"}); };
+  document.querySelector('.navbar a[href="#about"]').addEventListener('click',e=>{e.preventDefault();show('about');});
+  document.querySelector('.navbar a[href="#journey"]').addEventListener('click',e=>{e.preventDefault();show('journey');});
+  document.querySelector('.navbar a[href="#passport"]').addEventListener('click',e=>{e.preventDefault();show('passport');});
+  document.querySelector('.navbar a[href="#personalize"]').addEventListener('click',e=>{e.preventDefault(); const el=document.getElementById('personalize'); document.body.classList.add('entering-personalize'); setTimeout(()=>el.scrollIntoView({behavior:'auto',block:'start'}),650); setTimeout(()=>document.body.classList.remove('entering-personalize'),1500);});
+  document.querySelector('.navbar .logo').addEventListener('click',e=>{e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
+});
+</script>
+</body>
+
+</html>
